@@ -1,2 +1,2 @@
 <?php
-echo "Hello world";
+include("model/db_info.php");
