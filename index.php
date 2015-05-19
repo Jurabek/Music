@@ -119,7 +119,7 @@ include("model/db_info.php");
                 <h4 class="modal-title">Форма регистрация</h4>
             </div>
             <div class="modal-body" style="margin-left: 125px">
-                <form class="form-horizontal" method="POST" action="" id="regForm" name="regForm">
+                <form class="form-horizontal" method="POST" action="model/addUser.php" id="regForm" name="regForm">
                     <!--Имя-->
                     <div class="form-group">
                         <label class="col-sm-5" for="inputName">Имя</label>

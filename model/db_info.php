@@ -121,9 +121,10 @@ function insertTrack($album_id, $artist_id, $genre_id, $user_id, $name, $file_na
 function insertUser($name, $last_name, $login, $password, $birthday, $gender, $country_id)
 {
     $sql = sprintf(
-        "INSERT INTO user(name, last_name, login, password, birthday, gender, country_id)
+        "INSERT INTO users(name, last_name, login, password, birthday, gender, country_id)
          VALUES('%s', '%s', '%s', '%s', '%s', %d, %d)", $name, $last_name, $login, md5($password), $birthday, $gender, $country_id );
     mysql_query($sql);
+    return $sql;
 }
 
 /**
